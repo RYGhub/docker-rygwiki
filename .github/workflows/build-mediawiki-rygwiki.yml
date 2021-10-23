@@ -1,0 +1,21 @@
+name: Build rygwiki image
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "mediawiki-rygwiki/**"
+jobs:
+  build:
+    name: "Build rygwiki image"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: "Login to GitHub Containers"
+        run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u RYGhub --password-stdin
+      - name: "Build the docker container `ghcr.io/RYGhub/mediawiki-rygwiki:latest`"
+        run: docker build ./proxy --tag ghcr.io/RYGhub/mediawiki-rygwiki:latest
+      - name: "Upload the container to GitHub Containers"
+        run: docker push ghcr.io/RYGhub/mediawiki-rygwiki:latest
