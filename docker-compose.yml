@@ -16,7 +16,7 @@ services:
     volumes:
       - db-data:/var/lib/mysql
   mediawiki:
-    image: "mediawiki"
+    image: "ghcr.io/ryghub/mediawiki-rygwiki:latest"
     ports:
       - "30068:80"
     links:
