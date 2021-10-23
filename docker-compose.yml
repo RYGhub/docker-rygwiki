@@ -3,6 +3,7 @@ version: "3"
 volumes:
   db-data:
   images:
+  extensions:
 
 services:
   db:
@@ -22,4 +23,5 @@ services:
       - db
     volumes:
       - images:/var/www/html/images
+      - extensions:/var/www/mediawiki/extensions
       - ./LocalSettings.php:/var/www/html/LocalSettings.php
