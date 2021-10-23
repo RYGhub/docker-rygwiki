@@ -24,5 +24,4 @@ services:
     volumes:
       - images:/var/www/html/images
       - extensions:/var/www/mediawiki/extensions
-      - ./html:/var/www/html/
-      - ./mediawiki:/var/www/mediawiki/
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php
