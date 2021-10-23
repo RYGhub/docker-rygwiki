@@ -16,6 +16,6 @@ jobs:
       - name: "Login to GitHub Containers"
         run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u RYGhub --password-stdin
       - name: "Build the docker container `ghcr.io/ryghub/mediawiki-rygwiki:latest`"
-        run: docker build ./proxy --tag ghcr.io/ryghub/mediawiki-rygwiki:latest
+        run: docker build ./mediawiki-rygwiki --tag ghcr.io/ryghub/mediawiki-rygwiki:latest
       - name: "Upload the container to GitHub Containers"
         run: docker push ghcr.io/ryghub/mediawiki-rygwiki:latest
