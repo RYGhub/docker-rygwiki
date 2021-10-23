@@ -1,0 +1,25 @@
+version: 3
+
+volumes:
+  db-data:
+  images:
+
+services:
+  db:
+    image: "mariadb"
+    environment:
+      - MYSQL_DATABASE=wiki
+      - MYSQL_USER=wiki
+      - MYSQL_PASSWORD=i-milleuno-nomi-di-mallllco
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+    volumes:
+      - db-data:/var/lib/mysql
+      # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+  mediawiki:
+    image: "mediawiki"
+    ports:
+      - "30068:80"
+    links:
+      - db
+    volumes:
+      - images:/var/www/html/images
