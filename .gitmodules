@@ -1,3 +1,6 @@
 [submodule "mediawiki-rygwiki/mediawiki-extensions-PluggableAuth"]
 	path = mediawiki-rygwiki/mediawiki-extensions-PluggableAuth
 	url = https://github.com/wikimedia/mediawiki-extensions-PluggableAuth
+[submodule "mediawiki-rygwiki/mediawiki-extensions-OpenIDConnect"]
+	path = mediawiki-rygwiki/mediawiki-extensions-OpenIDConnect
+	url = https://github.com/wikimedia/mediawiki-extensions-OpenIDConnect
