@@ -14,7 +14,7 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
     volumes:
       - db-data:/var/lib/mysql
-      # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php
   mediawiki:
     image: "mediawiki"
     ports:
