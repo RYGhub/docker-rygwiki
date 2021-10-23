@@ -4,6 +4,7 @@ on:
     branches: [ main ]
     paths:
       - "mediawiki-rygwiki/**"
+      - ".github/workflows/build-mediawiki-rygwiki.yml"
 jobs:
   build:
     name: "Build rygwiki image"
