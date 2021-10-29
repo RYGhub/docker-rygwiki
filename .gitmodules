@@ -4,3 +4,6 @@
 [submodule "mediawiki-rygwiki/mediawiki-extensions-OpenIDConnect"]
 	path = mediawiki-rygwiki/mediawiki-extensions-OpenIDConnect
 	url = https://github.com/wikimedia/mediawiki-extensions-OpenIDConnect
+[submodule "mediawiki-rygwiki/FontAwesome"]
+	path = mediawiki-rygwiki/mediawiki-extensions-FontAwesome
+	url = https://github.com/ProfessionalWiki/FontAwesome
