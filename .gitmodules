@@ -7,3 +7,6 @@
 [submodule "mediawiki-rygwiki/FontAwesome"]
 	path = mediawiki-rygwiki/mediawiki-extensions-FontAwesome
 	url = https://github.com/ProfessionalWiki/FontAwesome
+[submodule "mediawiki-rygwiki/mediawiki-skins-Bluelib"]
+	path = mediawiki-rygwiki/mediawiki-skins-Bluelib
+	url = https://github.com/Steffo99/mediawiki-skins-Bluelib.git
