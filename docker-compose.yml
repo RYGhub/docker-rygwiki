@@ -24,4 +24,8 @@ services:
     volumes:
       - images:/var/www/html/images
       - extensions:/var/www/mediawiki/extensions
+      # Configuration:
       - ./LocalSettings.php:/var/www/html/LocalSettings.php
+      # Development:
+      - ./mediawiki-skins-Bluelib:/var/www/html/skins/Bluelib
+      - ./mediawiki-skins-SkinJson:/var/www/html/skins/SkinJson
