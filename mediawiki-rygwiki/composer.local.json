@@ -1,17 +1,11 @@
 {
-    "config": {
-        "allow-plugins": [
-            "mediawiki/font-awesome",
-            "mediawiki/openidconnect",
-            "mediawiki/pluggable-auth",
-            "mediawiki/bluelib"
-        ]
-    },
     "extra": {
         "merge-plugin": {
             "include": [
                 "extensions/OpenIDConnect/composer.json",
-                "extensions/FontAwesome/composer.json"
+                "extensions/FontAwesome/composer.json",
+                "extensions/PluggableAuth/composer.json",
+                "extensions/Bluelib/composer.json"
             ]
         }
     }
