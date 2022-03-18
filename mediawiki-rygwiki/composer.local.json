@@ -1,4 +1,9 @@
 {
+    "allow-plugins": [
+        "mediawiki/font-awesome",
+        "mediawiki/openidconnect",
+        "mediawiki/pluggable-auth"
+    ]
     "extra": {
         "merge-plugin": {
             "include": [
