@@ -2,8 +2,9 @@
     "allow-plugins": [
         "mediawiki/font-awesome",
         "mediawiki/openidconnect",
-        "mediawiki/pluggable-auth"
-    ]
+        "mediawiki/pluggable-auth",
+        "mediawiki/bluelib"
+    ],
     "extra": {
         "merge-plugin": {
             "include": [
