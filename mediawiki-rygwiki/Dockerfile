@@ -17,5 +17,5 @@ COPY composer.local.json /var/www/html/composer.local.json
 
 FROM step-extensions AS step-composer
 WORKDIR /var/www/html
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+COPY --from=composer:1 /usr/bin/composer /usr/local/bin/composer
 RUN composer update -vvv
